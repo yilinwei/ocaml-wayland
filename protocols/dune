@@ -44,7 +44,7 @@
 
 (rule
  (targets wlr_layer_shell_unstable_v1_client.ml
-          wlr_layer_shell_unstable_v1_server.ml
+          ; wlr_layer_shell_unstable_v1_server.ml
           wlr_layer_shell_unstable_v1_proto.ml)
  (deps wlr-layer-shell-unstable-v1.xml)
  (action (run %{bin:wayland-scanner-ocaml} --open Wayland.Wayland_proto %{deps})))
